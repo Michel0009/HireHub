@@ -1,0 +1,94 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: var(--body-color) !important;
+  transition: var(--tran-5);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./Assets/Fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./Assets/Fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./Assets/Fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./Assets/Fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./Assets/Fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+:root {
+  --background-image: url("./Assets/Images/background.jpg");
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+ --primary-black-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --primary-text-color: black;
+  --text-color: #707070;
+  --notify-text-color: #2b2525;
+  --shadow-color: hsla(222, 67%, 12%, 0.2);
+  --attachments-color: rgba(152, 144, 144, 0.226);
+  --more-icon-hover-color: rgba(105, 92, 254, 0.2);
+  --job-details-color: rgba(128, 128, 128, 0.656);
+  --border-bottom-color: rgba(128, 128, 128, 0.223);
+  --apply-btn-hover: rgba(105, 92, 254, 0.7);
+  --follow-btn-hover: rgba(255, 255, 255, 0.537);
+  --input--color: rgba(243, 243, 243, 0.878);
+  --input-color-hover: #f6f5ff;
+  --delete-container-color: hsl(0, 100%, 50%);
+  --delete-container-color-hover: hsl(0, 100%, 40%);
+  --wraper-color: #6a80c6;
+  --card-color: #d6e0ff;
+  --cv-btn-hover-color:#9e95fc;
+  --tran-2: all 0.2s ease;
+  --tran-3: all 0.3s ease;
+  --tran-4: all 0.4s ease;
+  --tran-5: all 0.5s ease;
+}
+body.dark {
+  --background-image: #18191a;
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #fff;
+  --primary-black-color: #000;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --primary-text-color: white;
+  --text-color: #ccc;
+  --notify-text-color: #fff;
+  --shadow-color: rgba(255, 255, 255, 0.3);
+  --attachments-color: rgb(255, 248, 248);
+  --more-icon-hover-color: rgba(255, 255, 255, 0.2);
+  --job-details-color: rgba(255, 255, 255, 0.656);
+  --border-bottom-color: rgba(255, 255, 255, 0.223);
+  --apply-btn-hover: rgba(255, 255, 255, 0.7);
+  --input-color: rgba(255, 255, 255, 0.3);
+  --input-color-hover: #fff;
+  --follow-btn-hover: rgba(0, 0, 0, 0.537);
+  --delete-container-color: #fff;
+  --delete-container-color-hover: hsl(0, 0%, 90%);
+  --wraper-color: #918f8fc8;
+  --card-color: #fff;
+  --cv-btn-hover-color: hsl(0, 0%, 80%);
+}

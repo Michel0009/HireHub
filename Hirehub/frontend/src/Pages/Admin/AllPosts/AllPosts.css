@@ -1,0 +1,20 @@
+.delete-icon {
+  position: absolute;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  top: 17px;
+  right: 10px;
+  border-radius: 5px;
+  color: var(--sidebar-color);
+  background-color: var(--delete-container-color);
+  cursor: pointer;
+}
+.company-name-all-posts {
+  font-size: 25px;
+  font-weight: 700;
+}
+.delete-icon:hover {
+  background-color: var(--delete-container-color-hover);
+}
+

@@ -1,0 +1,75 @@
+.notification-container {
+  display: flex;
+  position: relative;
+  left: 250px;
+  width: calc(100% - 250px);
+  justify-content: center;
+  transition: var(--tran-5);
+}
+.sider.close ~ .notification-container {
+  left: 88px;
+  width: calc(100% - 88px);
+}
+.notificationContainer {
+  background: var(--sidebar-color);
+  width: 700px;
+  margin: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+
+.notification-container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.notificationHeader {
+  display: flex;
+  align-items: center;
+  color: var(--notify-text-color);
+}
+#num_of_notif {
+  display: flex;
+  background: var(--primary-color);
+  color: var(--sidebar-color);
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 30px;
+  height: 30px;
+  border-radius: 0.5rem;
+  margin-left: 10px;
+}
+.container main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.notificationCard {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.notificationCard .description {
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.notif-text {
+  color: var(--notify-text-color);
+}
+#notif_time {
+  color: var(--text-color);
+}
+.notificationsSpliter {
+  border-bottom: 4px double var(--primary-text-color);
+}
+.noNew {
+  font-size: 25px;
+  color: var(--primary-text-color);
+}

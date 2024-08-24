@@ -1,0 +1,235 @@
+.sider header {
+  position: relative;
+}
+.logo-text img {
+  width: 60px;
+  border-radius: 6px;
+}
+.sider header .logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.header-text .name {
+  font-weight: 600;
+}
+.sider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 14px;
+  height: 100%;
+  width: 250px;
+  background: var(--sidebar-color);
+  transition: var(--tran-5);
+  z-index: 100;
+}
+.sider .text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: var(--tran-3);
+  white-space: nowrap;
+  opacity: 1;
+}
+.sider .logo {
+  min-width: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-links {
+  padding: 0;
+}
+
+.sider li {
+  height: 50px;
+  align-items: center;
+  list-style: none;
+  margin-top: 5px;
+  display: flex;
+}
+.sider li .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  min-width: 60px;
+}
+.sider li .icon,
+.sider li .text {
+  color: var(--text-color);
+  transition: var(--tran-2);
+}
+.sider li .link {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: var(--tran-4);
+}
+.sider li .link:hover,
+.sub-menu:hover,
+.sub-content li:hover {
+  background: var(--primary-color);
+}
+.sider li .link:hover .icon,
+.sider li .link:hover .text,
+.sub-menu:hover .icon,
+.sub-menu:hover .text,
+.sub-content li:hover .text {
+  color: var(--sidebar-color);
+}
+
+.sider .menu-bar {
+  height: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sider.close {
+  width: 88px;
+}
+.sider.close .text {
+  opacity: 0;
+}
+.sider header .toggle {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%) rotate(180deg);
+  height: 25px;
+  width: 25px;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  transition: var(--tran-3);
+  cursor: pointer;
+}
+.sider.close header .toggle {
+  transform: translateY(-50%);
+}
+body.dark .sider header .toggle {
+  color: var(--sidebar-color);
+}
+.menu-bar .mode {
+  position: relative;
+  background: var(--primary-color-light);
+  border-radius: 6px;
+}
+.menu-bar .mode .i {
+  position: absolute;
+  transition: var(--tran-3);
+}
+.menu-bar .mode .moon-sun {
+  height: 50px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+}
+.menu-bar .mode .sun {
+  opacity: 0;
+}
+body.dark .menu-bar .mode .sun {
+  opacity: 1;
+}
+body.dark .menu-bar .mode .moon {
+  opacity: 0;
+}
+
+.menu-bar .mode .toggle-switch {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  cursor: pointer;
+  border-radius: 6px;
+  background: var(--primary-color-light);
+  transition: var(--tran-2);
+}
+.toggle-switch .switch {
+  position: relative;
+  height: 22px;
+  width: 44px;
+  border-radius: 25px;
+  background: var(--toggle-color);
+}
+.switch::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background: var(--sidebar-color);
+  transition: var(--tran-3);
+}
+body.dark .switch::before {
+  left: 24px;
+}
+.sub-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sub-menu:hover {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-menu,
+.sub-content li {
+  cursor: pointer;
+  border-radius: 6px;
+  transition: var(--tran-4);
+}
+.down-arrow {
+  margin-right: 5px;
+  transition: var(--tran-3);
+}
+.sub-menu.open .down-arrow {
+  transform: rotate(180deg);
+}
+
+.sub-menu.open + .sub-content {
+  height: auto;
+}
+.sub-content,
+.sider.close .sub-content {
+  height: 0;
+  overflow: hidden;
+}
+.sub-content li {
+  justify-content: center;
+}
+.notifacation-number-bubble {
+  position: relative;
+  display: flex;
+  top: -5px;
+  left: -30px;
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 7px;
+  align-items: center;
+  justify-content: center;
+  margin-right: -15px ;
+}
+
+.notify-text {
+  position: relative;
+}

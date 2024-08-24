@@ -1,0 +1,72 @@
+.following {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  left: 250px;
+  width: calc(100% - 270px);
+  transition: var(--tran-5);
+  color: var(--notify-text-color);
+  margin-left: 20px;
+}
+.sider.close ~ .following {
+  left: 88px;
+  width: calc(100% - 108px);
+}
+.companies-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-left: 20px;
+}
+.company-card {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  background-color: var(--sidebar-color);
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 5px 5px 10px 1px var(--shadow-color);
+  color: var(--primary-text-color);
+}
+.avatar {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--attachments-color);
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: black;
+}
+.company-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.company_details {
+  width: 100%;
+}
+.company-link {
+  text-decoration: none;
+}
+.sider.close  ~ .following .no-result-following{
+  position: absolute;
+  top: 350px;
+  right: 600px;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--primary-text-color);
+  transition: var(--tran-5);
+
+}
+.sider ~ .following .no-result-following{
+  position: absolute;
+  top: 350px;
+  right: 500px;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--primary-text-color);
+  transition: var(--tran-5);
+}

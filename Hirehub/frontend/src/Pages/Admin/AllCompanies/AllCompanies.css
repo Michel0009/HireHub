@@ -1,0 +1,456 @@
+.submitters-container .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.submitters-section h1 {
+  color: var(--primary-text-color);
+}
+@media (max-width: 320px) {
+  .sider {
+    position: fixed;
+    height: 100vh;
+  }
+  .home {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .sider ~ .submitters-section,
+  .sider ~ .domains-container .sider ~ .home {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+
+  .submitters-container {
+    position: relative;
+    width: 90%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+  .submitters-details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-color: var(--sidebar-color);
+  }
+  .submitters-details h1 {
+    font-size: 10px;
+  }
+  .submitters-details .phone_number {
+    margin-top: 0;
+  }
+  .domains-container .domain-container {
+    position: relative;
+    width: 90%;
+  }
+  .add-domain .domain-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-domain .add-domain-input {
+    width: 90%;
+  }
+  .posts {
+    width: 90%;
+  }
+  .jobDetailsHeading {
+    text-align: center;
+  }
+  .post {
+    display: flex;
+    flex-direction: column;
+  }
+  .jobDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  .attachmentsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .follow-btn {
+    position: relative;
+    top: 2px;
+    right: 2px;
+  }
+  .detailsOfCompany {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .companies-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .following {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .company-link {
+    width: 90%;
+  }
+  .company-card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .company-detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .notification-container {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .notificationContainer {
+    position: relative;
+    width: 90%;
+  }
+  .notificationHeader {
+    display: flex;
+    flex-direction: column;
+  }
+  .notificationHeader h1 {
+    left: 0;
+    position: absolute;
+  }
+  #num_of_notif {
+    position: absolute;
+    top: 50px;
+  }
+  .noNew {
+    margin-top: 70px;
+    width: 150%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  .notificationCard {
+    width: 100%;
+  }
+  .notif-text {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  .details,
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .job-details {
+    width: 100%;
+  }
+  .jobContainer {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .saved-posts-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .saved-main {
+    left: 88px;
+    width: calc(100% - 88px);
+    margin-left: 0;
+  }
+  .saved-post-card {
+    width: 100%;
+    height: auto;
+  }
+  .fav-company-name {
+    margin-top: 30px;
+  }
+  .wallet {
+    position: relative;
+    width: 90%;
+    height: auto;
+  }
+  .charge {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .company {
+    height: 60%;
+    border-radius: 0;
+  }
+  .company-domain {
+    text-align: center;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .sider {
+    position: fixed;
+    height: 100vh;
+  }
+  .sider ~ .submitters-section,
+  .sider ~ .domains-container {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .home {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .submitters-container {
+    position: relative;
+    width: 90%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+  .submitters-details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-color: var(--sidebar-color);
+  }
+  .submitters-details h1 {
+    font-size: 10px;
+  }
+  .submitters-details .phone_number {
+    margin-top: 0;
+  }
+  .domains-container .domain-container {
+    position: relative;
+    width: 90%;
+  }
+  .add-domain .domain-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .add-domain .add-domain-input {
+    width: 90%;
+  }
+  .companies-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .company-link {
+    width: 90%;
+  }
+  .company-card {
+    position: relative;
+    width: 100%;
+  }
+  .following {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .notification-container {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .notificationContainer {
+    width: 90%;
+  }
+  .details,
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .job-details {
+    width: 100%;
+  }
+  .jobContainer {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .saved-posts-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .saved-main {
+    left: 88px;
+    width: calc(100% - 88px);
+    margin-left: 0;
+  }
+  .saved-post-card {
+    width: 100%;
+    height: auto;
+  }
+  .fav-company-name {
+    margin-top: 30px;
+  }
+  .wallet {
+    position: relative;
+    width: 90%;
+    height: auto;
+  }
+  .charge {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .company {
+    height: 60%;
+    border-radius: 0;
+  }
+  .company-domain {
+    text-align: center;
+  }
+  .follow-btn {
+    position: relative;
+    top: 2px;
+    right: 2px;
+  }
+  .posts {
+    width: 90%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .sider {
+    position: fixed;
+    height: 100vh;
+  }
+  .sider ~ .submitters-section,
+  .sider ~ .domains-container {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .home {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .submitters-container {
+    position: relative;
+    width: 80%;
+  }
+  .domains-container .domain-container {
+    position: relative;
+    width: 90%;
+  }
+  .following {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .company-card {
+    height: 100%;
+  }
+  .details,
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .job-details {
+    width: 90%;
+  }
+  .jobContainer {
+    left: 88px;
+    width: calc(100% - 88px);
+  }
+  .saved-posts-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .saved-main {
+    left: 88px;
+    width: calc(100% - 88px);
+    margin-left: 0;
+  }
+  .saved-post-card {
+    width: 100%;
+    height: auto;
+  }
+  .fav-company-name {
+    margin-top: 30px;
+  }
+  .wallet {
+    position: relative;
+    width: 90%;
+    height: auto;
+  }
+  .charge {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .posts {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sider {
+    position: fixed;
+    height: 100vh;
+  }
+
+  .submitters-section {
+    width: 70%;
+  }
+  .submitters-container,
+  .domains-container .domain-container {
+    position: relative;
+    width: 80%;
+  }
+  .company-card {
+    height: 100%;
+  }
+  .details,
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .job-details {
+    width: 90%;
+  }
+  .saved-posts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+  }
+  .saved-main {
+    left: 88px;
+    width: calc(100% - 88px);
+    margin-left: 0;
+  }
+  .saved-post-card {
+    width: 100%;
+    height: auto;
+  }
+  .wallet {
+    position: relative;
+    width: 70%;
+    height: auto;
+  }
+  .charge {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+}

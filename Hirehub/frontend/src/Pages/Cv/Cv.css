@@ -1,0 +1,176 @@
+.userh {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.userparagraph {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.usercontainerr {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  background: var(--wraper-color);
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.text-3xl {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-gray {
+  color: #666;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 323px) {
+  .grid {
+    display: block;
+  }
+}
+​ .gap-4 {
+  gap: 1rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.card {
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 4px 15px var(--primary-text-color);
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.card-header {
+  background: var(--body-color);
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px var(--primary-text-color);
+  padding: 1rem 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: var(--primary-color);
+}
+
+.card-description {
+  color: #929191;
+  font-size: 1rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+  background: var(--card-color);
+}
+
+.card-footer {
+  padding: 1rem 1.5rem;
+  background: var(--body-color);
+  border-radius: 20px;
+  box-shadow: 10px 0px 15px var(--primary-text-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin: 1rem;
+  color: var(--primary-black-color);
+}
+
+.input,
+.usertextarea,.cv-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  background: var(--body-color);
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.2s;
+}
+
+.input:focus,
+.userselect:focus,
+.usertextarea:focus {
+  outline: none;
+  border-color: var(--primary-black-color);
+}
+.input:hover,
+.userselect:hover,
+.usertextarea:hover {
+  outline: none;
+  border-color: var(--primary-black-color);
+}
+.usertextarea {
+  resize: vertical;
+}
+
+.ml-auto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--body-color);
+  background: var( --primary-color);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px var(--primary-text-color);
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+}
+
+.ml-auto:active {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(0.98); /* يجعل الزر يبدو مضغوطًا قليلاً عند الضغط */
+}
+
+.ml-auto:hover {
+  background: var(--cv-btn-hover-color);
+}
+
+
+.space-y-2 input,
+.space-y-2 select {
+  border-radius: 64px;
+}

@@ -1,0 +1,18 @@
+.dropdownMenuM li:nth-child(2) {
+  margin-bottom: 0px;
+}
+.no-result-all {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 630px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--primary-text-color);
+  opacity: 0.5;
+}
+.my {
+  margin-top: 20px;
+}

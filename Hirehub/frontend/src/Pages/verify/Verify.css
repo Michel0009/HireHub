@@ -1,0 +1,69 @@
+.bodyverify {
+  width: 100vw;
+  height: 100vh;
+  background:#f6f5ff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailcontainer {
+  height: 450px;
+  width: 450px;
+  color:  #707070;
+  background-color: #e4e9f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 20px;
+  border: 2px solid #9ab6e164;
+  box-shadow: 0 0 15px #9cb1d1;
+  font-family: sans-serif;
+}
+.inp input {
+  width: 50px;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid #707070;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0 10px 6px;
+  color: #13dad6;
+  background: transparent;
+}
+.inp input:focus{
+  background: #707070;
+  border: 2px solid #13dad6;
+
+}
+.buttonvere button {
+  margin: 20px 10px;
+  width: 100px;
+  font-weight: 700px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #13dad6;
+  color:  #707070;
+  padding: 9px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 4px gray);
+}
+
+.buttonvere button:hover {
+ background:#707070 ;
+ color: #13dad6;
+}
+
+
+.errverify{
+  height: 20px;
+}
+.errmes_verify{
+  color: red;
+  font-size: 12px;
+}
